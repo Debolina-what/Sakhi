@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#F4CCD3"
+    android:padding="20dp">
+    
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wellcome Back, Sakhi!!!"
+        android:textColor="#680202"
+        android:textSize="40sp"
+        android:fontFamily="@font/charmonman"/>
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antic"
+        android:text="Sign in to continue"
+        android:textColor="#680202"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:textColor="#000"
+        android:ems="10"
+        android:layout_below="@+id/editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editPassword"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogin"
+        android:layout_below="@+id/editPassword"
+        android:layout_marginTop="20dp"
+        android:text="Log IN "
+        android:theme="@style/Button.White"
+        />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_marginTop="20dp"
+        android:text="NOT A USER? | SIGN UP"
+        android:theme="@style/Button.White"
+        />
+</LinearLayout>
